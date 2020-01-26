@@ -4,7 +4,7 @@
     <div class="row">
         <aside class="col-sm-4">
             @include('users.card', ['user' => $user])
-            @include('user_favorite.favorite_button', ['micripost' => $micropost])
+            
         </aside>
         <div class="col-sm-8">
             @include('users.navtabs', ['user' => $user])
@@ -19,6 +19,7 @@
             @if (count($microposts) > 0)
                 @include('user_follow.follow_button', ['user' => $user])
                 @include('microposts.microposts', ['microposts' => $microposts])
+                
             @endif
         </div>
     </div>
