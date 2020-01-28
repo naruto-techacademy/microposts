@@ -96,7 +96,7 @@ class User extends Authenticatable
     
     public function favorite($micropostId)
     {
-        // 既にお気に入りしているかの確認
+        // 既にお気に入りし�����いるかの確認
         $exist = $this->is_favorite($micropostId);
         
         if ($exist) {

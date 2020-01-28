@@ -17,10 +17,12 @@
                 {!! Form::close() !!}
             @endif
             @if (count($microposts) > 0)
-                @include('user_follow.follow_button', ['user' => $user])
                 @include('microposts.microposts', ['microposts' => $microposts])
-                
             @endif
+            
+            
+
+
         </div>
     </div>
 @endsection
